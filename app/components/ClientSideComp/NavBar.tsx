@@ -40,16 +40,16 @@ export default function NavBar() {
                 </div>
             </div>
 
-            <div className={`fixed min-[500px]:hidden max-[500px]:flex  flex-col w-full items-center overflow-hidden ${click ? 'h-[120px]' : 'h-[5vw]'} transform transition-all ease-out delay-50 ${scrolled || click ? 'bg-white' : 'bg-transparent'}`}>
+            <div className={`pt-[5px] fixed min-[500px]:hidden max-[500px]:flex  flex-col w-full items-center overflow-hidden ${click ? 'h-[129px]' : 'h-[30px]'} transform transition-all ease-out delay-50 ${scrolled || click ? 'bg-white' : 'bg-transparent'}`}>
               <div className={`flex flex-row w-full items-center justify-between    pr-[5%] pl-[5%]`}>
-                <Image src={Logo} alt='logo' className='w-[5vw]'/>
-                <div className='flex justify-center flex-col gap-[3px]' onClick={()=>setClick(!click)}>
-                  <div className={`w-4 h-px bg-black relative transition-all ease-out delay-50 ${click ? 'top-[4px] rotate-45' : 'top-[0px] rotate-0' }`}></div>
-                  <div className={`w-4 h-px bg-black transition-[opacity] delay-50 ${click && 'opacity-0'}`}></div>
-                  <div className={`w-4 h-px bg-black relative transition-all ease-out delay-50 ${click ? 'bottom-[4px] rotate-[-45deg]' :'bottom-[0px] rotate-[0deg]'}`}></div>
+                <Image src={Logo} alt='logo' className='w-[6vw]'/>
+                <div className='flex justify-center flex-col gap-[5px]' onClick={()=>setClick(!click)}>
+                  <div className={`w-8 h-[2px] bg-black relative transition-all ease-out delay-50 ${click ? 'top-[7px] rotate-45' : 'top-[0px] rotate-0' }`}></div>
+                  <div className={`w-8 h-[2px] bg-black transition-[opacity] delay-50 ${click && 'opacity-0'}`}></div>
+                  <div className={`w-8 h-[2px] bg-black relative transition-all ease-out delay-50 ${click ? 'bottom-[7px] rotate-[-45deg]' :'bottom-[0px] rotate-[0deg]'}`}></div>
                 </div>
               </div>
-              <ul className={`flex flex-col w-full text-center transform transition-all ease-out delay-50 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
+              <ul className={`mt-[5px] flex flex-col w-full text-center transform transition-all ease-out delay-50 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
                   <li className='w-full font-[300] hover:bg-slate-200 hover:cursor-pointer'>ABOUT US</li>
                   <li className='w-full font-[300] hover:bg-slate-200 hover:cursor-pointer'>OUR STAFF</li>
                   <li className='w-full font-[300] hover:bg-slate-200 hover:cursor-pointer'>CONTACT</li>
