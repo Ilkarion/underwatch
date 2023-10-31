@@ -7,6 +7,7 @@ import SocialMedia from "../components/ServerSideComp/SocialMedia"
 import JoinCommunity from "../components/ServerSideComp/JoinCommunity"
 import OurTeam from "../components/ServerSideComp/OurTeam"
 import WhatOffer from "../components/ServerSideComp/WhatOffer"
+import TrackingTech from "../components/ServerSideComp/TrackingTech"
 export default function Home() {
   const t = Translation()
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <JoinCommunity />
       <OurTeam />
       <WhatOffer />
+      <TrackingTech />
     </>
   )
 }
