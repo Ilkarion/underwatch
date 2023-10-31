@@ -2,7 +2,7 @@ import girlRobot from '../../../public/robot-girl.jpg'
 export default function JoinCommunity() {
     return(
         <div className="h-[38vw] w-full relative max-[701px]:h-[500px] max-[507px]:h-[300px] max-[377px]:h-[225px]">
-            <div className="w-full h-full absolute z-[-1]"
+            <div className="w-full h-full absolute z-[-3]"
                 style={{
                     backgroundImage: `url(${girlRobot.src})`,
                     backgroundSize: 'cover',
